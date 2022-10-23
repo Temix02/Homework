@@ -8,34 +8,37 @@ public class Task2
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите размер в байтах:");
-        long a = sc.nextLong();
+        double a = sc.nextLong();
         int b = 0;
         double c = 0;
 
         while (a >= 1024) {
             a /= 1024;
-            c = (double)a;
-            b++;
+            ++b;
+            if(b == 4)
+            {
+                break;
+            }
         }
         switch (b) {
             case(0):
-                System.out.printf("%.1f", c);
+                System.out.printf("%.1f", a);
                 System.out.print("В");
                 break;
             case (1):
-                System.out.printf("%.1f", c);
+                System.out.printf("%.1f", a);
                 System.out.print("КВ");
                 break;
             case (2):
-                System.out.printf("%.1f", c);
+                System.out.printf("%.1f", a);
                 System.out.print("MВ");
                 break;
             case (3):
-                System.out.printf("%.1f", c);
+                System.out.printf("%.1f", a);
                 System.out.print("ГВ");
                 break;
             case (4):
-                System.out.printf("%.1f", c);
+                System.out.printf("%.1f", a);
                 System.out.print("ТВ");
                 break;
             default:
