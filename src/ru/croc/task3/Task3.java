@@ -1,7 +1,5 @@
 package ru.croc.task3;
 
-import java.util.Scanner;
-
 public class Task3 {
 
     public static void main(String[] args) {
@@ -48,7 +46,7 @@ public class Task3 {
             }
         }
 
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < (arr.length-1); i++){
             System.out.println(arr[i]);
         }
     }
